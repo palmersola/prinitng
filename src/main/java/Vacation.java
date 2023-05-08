@@ -5,5 +5,6 @@ public class Vacation {
         System.out.println("Tokyo");
         System.out.println("Japan");
 
+
     }
 }
