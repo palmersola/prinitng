@@ -6,6 +6,7 @@ public class VariableInputs {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+
         System.out.println("Enter a string of text:");
         String str = scanner.nextLine();
         System.out.println("Enter an integer:");
