@@ -1,15 +1,34 @@
 package COCP;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Customer {
+    Random rand = new Random();
+
     private final String name;
     private double balance;
+    private int accountNum;
 
         public Customer(String name, double balance) {
             this.name = name;
             this.balance = balance;
+            this.accountNum = rand.nextInt(100000);
         }
 
-        public void deposit(double amount) {
+    public String getName() {
+        return name;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public int getAccountNum() {
+        return accountNum;
+    }
+
+    public void deposit(double amount) {
             this.balance = this.balance + amount;
         }
 
@@ -18,6 +37,7 @@ public class Customer {
         }
 
         public void print() {
-            System.out.println(this.name + "'s account balance is: " + this.balance);
+            System.out.println(getName() + "'s account balance is: " + getBalance());
         }
+
 }
